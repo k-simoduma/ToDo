@@ -1,0 +1,45 @@
+@charset "utf-8";
+header {
+    height: auto;
+}
+
+#header-logo {
+    padding-bottom: 12px;
+    border-bottom: solid 2px black;
+}
+
+#header-logo a {
+    margin: 16px;
+    font-size: 32px;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+}
+
+#menu {
+    text-align: right;
+}
+
+#menu-bar {
+    display: inline-block;
+}
+
+.menu-item {
+    list-style: none;
+    float: left;
+    padding: 3px 20px 3px 20px;
+    cursor: pointer;
+}
+
+.menu-item a {
+    margin: 0 1em;
+    font-size: 16px;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+}
+
+.menu-item a:hover {
+    text-decoration: underline;
+    text-decoration-color: black;
+}
