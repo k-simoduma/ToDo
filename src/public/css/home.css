@@ -1,0 +1,104 @@
+@charset "utf-8";
+.form {
+    background-color: white;
+    margin: 30px auto;
+    width: 70%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: solid 2px #ccc;
+    border-radius: 15px;
+    box-shadow: 3px 3px 3px gray;
+}
+
+.form form {
+    margin: 0 auto;
+    width: 90%;
+}
+
+.form-title {
+    text-align: center;
+    padding-bottom: 12px;
+}
+
+.form-title h4 {
+    margin: 0em;
+}
+
+.form-item {
+    width: 100%;
+    padding-bottom: 10px;
+}
+
+.form-item input {
+    width: 94%;
+    height: 30px;
+    font-size: 16px;
+    color: #333;
+    border: solid 2px #ccc;
+    border-radius: 10px;
+    outline: 0;
+    transition: 0.3s;
+    -webkit-appearance: none;
+}
+
+.form-item input:focus {
+    border: 2px solid #00b5ad;
+}
+
+.form-check {
+    padding-bottom: 20px;
+}
+
+.form-button {
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.form-button {
+    text-align: center;
+}
+
+.form-item button {
+    border-radius: 8px;
+    background-color: black;
+    color: white;
+    font-size: 15px;
+    width: auto;
+    height: 30px;
+}
+
+.form-item button:focus {
+    outline: none;
+}
+
+.list {
+    background-color: white;
+    margin: 30px auto;
+    width: 70%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: solid 2px #ccc;
+    border-radius: 15px;
+    box-shadow: 3px 3px 3px gray;
+}
+
+.list li {
+    list-style: none;
+    margin: 0 auto;
+    width: 98%;
+}
+
+.list-check {
+    display: inline-block;
+    width: 3%;
+}
+
+.list-content {
+    display: inline-block;
+    width: 92%;
+}
+
+.list-button {
+    display: inline-block;
+    width: 3%;
+}
