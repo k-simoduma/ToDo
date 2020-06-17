@@ -71,9 +71,10 @@
     outline: none;
 }
 
-.list {
+.list li {
+    list-style: none;
     background-color: white;
-    margin: 30px auto;
+    margin: 10px auto;
     width: 70%;
     padding-top: 15px;
     padding-bottom: 15px;
@@ -82,8 +83,7 @@
     box-shadow: 3px 3px 3px gray;
 }
 
-.list li {
-    list-style: none;
+.list-item {
     margin: 0 auto;
     width: 98%;
 }

@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Todo;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class HomeController extends Controller
 {
@@ -23,6 +25,19 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+        $data = Todo::get();
+        return view('home', ['data' => $data]);
+    }
+
+    public function create(Request $req)
+    {
+        $user_id = Auth::id();
+        
+        Todo::create([
+            "user_id" => $user_id,
+            "content" => $req->content,
+        ]);
+
+        return redirect('/');
     }
 }
