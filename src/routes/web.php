@@ -19,4 +19,5 @@ Auth::routes();
 Auth::routes(['verify' => true]);
 
 Route::get('/', 'HomeController@index')->name('home')->middleware('verified');
-Route::post('/create','HomeController@create')->name('create');
+Route::post('/create','HomeController@createData')->name('create');
+Route::post('/update','HomeController@updateData')->name('update');
