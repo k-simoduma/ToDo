@@ -12,7 +12,6 @@ $(function() {
                 'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
             },
             url: "/update",
-            dataType: "json",
             type: 'POST',
             data: {
                 id: id,
@@ -21,3 +20,22 @@ $(function() {
         });
     });
 });
+
+$(function() {
+    $('.delete').on('click', function() {
+        var id = $(this).parents('.list-item').children('.todo-id').val();
+
+        $.ajax({
+            headers: {
+                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+            },
+            url: "/delete",
+            type: 'POST',
+            data: {
+                id: id,
+            },
+        });
+
+        $(this).parents('.todo_' + id).remove();
+    })
+})

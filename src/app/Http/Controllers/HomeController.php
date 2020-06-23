@@ -47,4 +47,11 @@ class HomeController extends Controller
 
         return redirect('/');
     }
+
+    public function deleteData(Request $req)
+    {
+        Todo::where('id', $req->id)->delete();
+
+        return redirect('/');
+    }
 }
