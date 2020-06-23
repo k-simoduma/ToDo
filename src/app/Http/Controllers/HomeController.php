@@ -29,7 +29,7 @@ class HomeController extends Controller
         return view('home', ['data' => $data]);
     }
 
-    public function create(Request $req)
+    public function createData(Request $req)
     {
         $user_id = Auth::id();
         
@@ -37,6 +37,13 @@ class HomeController extends Controller
             "user_id" => $user_id,
             "content" => $req->content,
         ]);
+
+        return redirect('/');
+    }
+
+    public function updateData(Request $req)
+    {
+        Todo::where('id', $req->id)->update(['is_completed' => $req->is_completed]);
 
         return redirect('/');
     }
